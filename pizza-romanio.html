@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizza RoMan.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+<body>
+    <div class="container-fluid" id="article">
+        <div class="row">
+            <header class="col-12">
+                <div class="parallax-viewport" id="test1">
+                    <div class="parallax-layer" id="logoP">Pizza<br/>Roman.io</div>
+                    <div class="parallax-layer" ><img src="img/s24.png" alt="" id="parallaxImg1"></div>
+                    <div class="parallax-layer" ><img src="img/s09.png" alt="" id="parallaxImg2"></div>
+                    <div class="parallax-layer" ><img src="img/s31.png" alt="" id="parallaxImg3"></div>
+                </div>
+            </header>
+    </div></div>
+
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white" id="mainNav">
+                <a class="navbar-brand ml-5 mr-5" href="#">Pizza Roman.io</a>
+                <button class="navbar-toggler ml-5 mr-5"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end ml-5 mr-5" id="navbarNav">
+                    <ul class="navbar-nav text-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#navOrder">Заказ пиццы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#navGallery">Галлерея</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#navMap">Карта</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+    <div class="container" id="navOrder">
+            <div class="col-12 text-center">
+                    <h2>Размер пиццы</h2>
+                   <input type="radio" name="size" id="sizeS" class="size" value="100">
+                        <label for="sizeS">Маленькая 30 см</label>
+                    <input type="radio" name="size" id="sizeM" class="size" value="125" checked>
+                        <label for="sizeM">Средняя 35 см</label>
+                    <input type="radio" name="size" id="sizeL" class="size" value="150">
+                        <label for="sizeL">Большая 40 см</label>
+            </div>
+    </div>
+    <div class="container">
+            <div class="row justify-content-around">
+                <aside class="col-4 mt-4">
+                    <h2>Ингридиенты</h2>
+                    <form method="post" id="ingridients">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" name="cheese" class="custom-control-input" id="cheese" value="25">
+                            <label class="custom-control-label" for="cheese">Сыр</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" name="tomato" id="tomato" value="15">
+                            <label class="custom-control-label" for="tomato">Томаты</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" name="bacone" id="bacone" value="20">
+                            <label class="custom-control-label" for="bacone">Бекон</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" name="fish" id="fish" value="20">
+                            <label class="custom-control-label" for="fish">Лосось</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" name="mashrooms" id="mashrooms" value="15">
+                            <label class="custom-control-label" for="mashrooms">Грибы</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" name="olives" id="olives" value="15">
+                            <label class="custom-control-label" for="olives">Оливки</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" name="rukkola" id="rukkola" value="10">
+                            <label class="custom-control-label" for="rukkola">Руккола</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" name="spices" id="spices" value="10">
+                            <label class="custom-control-label" data-name = 'Zelen' for="spices">Зелень</label>
+                        </div>
+                    </form>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="coast">
+                            Заказать
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Ваш Заказ</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="myForm" >
+                                        <p id="pizzaOrder"></p>
+                                        <p><strong>К оплате: <span class="badge badge-warning" id="pizzaResult"></span> грн</strong></p>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" name="name" placeholder="Имя" data-val-id="nameVal">
+                                                <div id="nameVal" class="invalid-tooltip">Введите ваше имя, можно водить только буквы русского или английского алфавита.</div>
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" name="phone" placeholder="Телефон" data-val-id="telVal">
+                                                <div id="telVal" class="invalid-tooltip">Номер телофона нужно ввести в формате:<br/>090-123-45-67</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancel" form="myForm">Отмена</button>
+                                <button type="submit" class="btn btn-primary" id="submit" form="myForm">Заказать</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    
+
+                </aside>
+                <div class="col-6 mt-4" id="pizzaEl">
+                    <img src="img/constractor_pizza.png" alt="Основа" class="pizza" style="visibility:visible">
+                    <img src="img/3-big-nachinka_01.png" alt="Сыр" class="pizza">
+                    <img src="img/13-big-nachinka_25_new.png" alt="Томаты" class="pizza">
+                    <img src="img/24-big-nachinka_26_new.png" alt="Бекон" class="pizza">
+                    <img src="img/10-big-nachinka_28_new.png" alt="Лосось" class="pizza">
+                    <img src="img/21-big-nachinka_24_new.png" alt="Грибы" class="pizza">
+                    <img src="img/25-big-nachinka_29_new.png" alt="Оливки" class="pizza">
+                    <img src="img/16-big-nachinka_31_new.png" alt="Рукклоа" class="pizza">
+                    <img src="img/17-big-nachinka_30_new.png" alt="Зелень" class="pizza">
+                </div>
+            </div>
+        </div>
+        <div class="container" id="navGallery">
+            <section class="col-12 text-center">
+                <h2>Галлерея</h2>
+                <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-7">
+                                <div id="carouselMy" class="carousel my-carousel  slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src="img/05.jpg" alt="Суши" >
+                                                <div class="carousel-caption">
+                                                    <h6>Суши</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="img/07.jpg" alt="Сэндвич">
+                                                <div class="carousel-caption">
+                                                    <h6>Сэндвич</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="img/09.jpg" alt="Стейк">
+                                                <div class="carousel-caption">
+                                                    <h6>Стейк</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselMy" data-slide="prev">
+                                            <img src="img/prev2.png" alt="prev">
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselMy" data-slide="next">
+                                            <img src="img/next2.png" alt="next">
+                                        </a>
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselMy" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselMy" data-slide-to="1"></li>
+                                            <li data-target="#carouselMy" data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </section>
+        </div>
+        <div class="container-fluid" id="navMap">
+            <div class="col text-center" >
+                <h2>Мы на карте</h2>
+                <div id="map" style="height:400px"></div>
+            </div>
+        </div>
+        <div class="container">
+            <footer class="col-12 text-right">
+                Created by Roman Smal
+            </footer>
+        </div>
+    
+    <a href="#" id="bTop" class="btn btn-outline-dark mb-4 mr-4">UP</a>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="jquery.parallax.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script src="main.js"></script>  
+     
+</body>
+</html>
